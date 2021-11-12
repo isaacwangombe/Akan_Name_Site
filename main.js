@@ -1,5 +1,7 @@
 let maleName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 let femaleName = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
-let day = (year, month, date) => {}
+let day = (year, month, date) => {
+    DD = parseInt(date);
+}
 day()
