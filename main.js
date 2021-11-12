@@ -47,31 +47,31 @@ let day = (year, month, date) => {
     CC = parseInt(year.substring(0, 2))
     YY = parseInt(year.substring(2, 4))
 
+    D = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7
+
 }
 
 day("1995", "October", 5)
 
+let gender = (maleFemale) => {
 
-
-D = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7
-console.log(D)
-
-D2 = console.log(parseInt(D))
-
-let gender = (male, female) => {
-
-
-}
-gender()
-
-let akanName = (akanName) => {
     let maleName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     let femaleName = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
+    if (maleFemale == "male") {
+        akanGender = maleName
+    } else if (maleFemale = "female") {
+        akanGender = femaleName
+    }
+
 
 }
+gender("male")
 
-sliceUp = D
-sliceDown = D - 1
+let akanName = (akanName) => {
 
-console.log(maleName.slice(sliceDown, sliceUp))
+    sliceUp = D
+    sliceDown = D - 1
+    console.log(akanGender.slice(sliceDown, sliceUp))
+}
+akanName()
