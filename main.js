@@ -6,55 +6,55 @@ let day = (year, month, date) => {
 
     switch (month) {
         case "January":
-            monthNumber = 0;
-            break;
-        case "February":
             monthNumber = 1;
             break;
-        case "March":
+        case "February":
             monthNumber = 2;
             break;
+        case "March":
+            monthNumber = 1;
+            break;
         case "April":
-            monthNumber = 3;
+            monthNumber = 2;
             break;
         case "May":
-            monthNumber = 4;
+            monthNumber = 3;
             break;
         case "June":
-            monthNumber = 5;
+            monthNumber = 4;
             break;
         case "July":
-            monthNumber = 6;
+            monthNumber = 5;
             break;
         case "August":
-            monthNumber = 7;
+            monthNumber = 6;
             break;
         case "September":
-            monthNumber = 8;
+            monthNumber = 7;
             break;
         case "October":
-            monthNumber = 9;
+            monthNumber = 8;
             break;
         case "November":
-            monthNumber = 12;
+            monthNumber = 11;
             break;
         case "December":
-            monthNumber = 11;
+            monthNumber = 12;
             break;
         default:
             monthNumber = "invalid Month"
     }
-    let MM = monthNumber;
+    MM = monthNumber;
 
-    let years = year
-    let CC = parseInt(years.substring(0, 2))
-    let YY = parseInt(years.substring(2, 4))
 
-    console.log(MM)
-    console.log(DD)
-    console.log(CC)
-    console.log(YY)
+    CC = parseInt(year.substring(0, 2))
+    YY = parseInt(year.substring(2, 4))
 
 }
 
-day("1999", "April", 7)
+day("1995", "October", 5)
+
+
+
+D = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7
+console.log(D)
