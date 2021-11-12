@@ -1,8 +1,7 @@
 body {
-    align-self: center;
-    background-image: url(static/images/mandala.jpg);
-    background-size: 100%;
+    background-image: url(/static/images/mandala.jpg);
     background-color: rgb(16, 16, 20);
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 

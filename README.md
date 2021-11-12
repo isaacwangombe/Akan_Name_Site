@@ -10,7 +10,7 @@ None
 * Follow the link {git clone https://github.com/jonnygovish/cookie-recipe.git}
 
 ## Known Bugs
-{Are there issues that have not yet been resolved that you want to let users know you know? Outline any issues that would impact use of your application. Share any workarounds that are in place. }
+{styles.css is not linking in gh-pages, though is available via vs code }
 ## Technologies Used
 The site was built with HTML, CSS and Java Script
 ## Support and contact details
