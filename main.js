@@ -48,10 +48,10 @@ let day = (year, month, date) => {
     YY = parseInt(year.substring(2, 4))
 
     D = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7
-
+    year = document.getElementById("bDate")[0].value;
 }
 
-day("1995", "October", 5)
+day(year, "October", 5)
 
 let gender = (maleFemale) => {
 
