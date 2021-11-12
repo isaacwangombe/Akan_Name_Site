@@ -10,7 +10,7 @@ None
 * Follow the link {https://isaacmariga.github.io/Akan_Name/}
 
 ## Known Bugs
-{styles.css is not linking in gh-pages, though is available via vs code }
+{main.js is not linked to index.html }
 ## Technologies Used
 The site was built with HTML, CSS and Java Script
 ## Support and contact details
