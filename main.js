@@ -50,5 +50,11 @@ let day = (year, month, date) => {
     let CC = parseInt(years.substring(0, 2))
     let YY = parseInt(years.substring(2, 4))
 
+    console.log(MM)
+    console.log(DD)
+    console.log(CC)
+    console.log(YY)
+
 }
-day()
+
+day("1999", "April", 7)
