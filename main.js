@@ -1,6 +1,3 @@
-let maleName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-let femaleName = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-
 let day = (year, month, date) => {
     DD = parseInt(date);
 
@@ -33,7 +30,7 @@ let day = (year, month, date) => {
             monthNumber = 7;
             break;
         case "October":
-            monthNumber = 8;
+            monthNumber = 10;
             break;
         case "November":
             monthNumber = 11;
@@ -59,7 +56,22 @@ day("1995", "October", 5)
 D = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7
 console.log(D)
 
+D2 = console.log(parseInt(D))
+
 let gender = (male, female) => {
+
 
 }
 gender()
+
+let akanName = (akanName) => {
+    let maleName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    let femaleName = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
+
+}
+
+sliceUp = D
+sliceDown = D - 1
+
+console.log(maleName.slice(sliceDown, sliceUp))
