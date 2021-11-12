@@ -1,4 +1,6 @@
 let day = (year, month, date) => {
+
+
     DD = parseInt(date);
 
     switch (month) {
@@ -9,25 +11,25 @@ let day = (year, month, date) => {
             monthNumber = 2;
             break;
         case "March":
-            monthNumber = 1;
-            break;
-        case "April":
-            monthNumber = 2;
-            break;
-        case "May":
             monthNumber = 3;
             break;
-        case "June":
+        case "April":
             monthNumber = 4;
             break;
-        case "July":
+        case "May":
             monthNumber = 5;
             break;
-        case "August":
+        case "June":
             monthNumber = 6;
             break;
-        case "September":
+        case "July":
             monthNumber = 7;
+            break;
+        case "August":
+            monthNumber = 8;
+            break;
+        case "September":
+            monthNumber = 9;
             break;
         case "October":
             monthNumber = 10;
@@ -54,6 +56,9 @@ let day = (year, month, date) => {
 day(year, "October", 5)
 
 let gender = (maleFemale) => {
+
+    var isMale = document.getElementById("maleCheck").ariaChecked;
+    var isFemale = document.getElementById("femaleCheck")
 
     let maleName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     let femaleName = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];

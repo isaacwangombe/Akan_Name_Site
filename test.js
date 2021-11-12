@@ -1,1 +1,1 @@
-let myForm = document.getElementById("myForm");
+let myForm = console.log(document.getElementById("firstName").value);
