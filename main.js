@@ -58,3 +58,8 @@ day("1995", "October", 5)
 
 D = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7
 console.log(D)
+
+let gender = (male, female) => {
+
+}
+gender()
