@@ -7,7 +7,7 @@
 None
 
 ## Live link
-* Follow the link {git clone https://github.com/jonnygovish/cookie-recipe.git}
+* Follow the link {https://isaacmariga.github.io/Akan_Name/}
 
 ## Known Bugs
 {styles.css is not linking in gh-pages, though is available via vs code }
