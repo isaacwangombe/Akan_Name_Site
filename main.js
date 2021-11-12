@@ -44,7 +44,11 @@ let day = (year, month, date) => {
         default:
             monthNumber = "invalid Month"
     }
-    let MM = monthNumber
+    let MM = monthNumber;
+
+    let years = year
+    let CC = parseInt(years.substring(0, 2))
+    let YY = parseInt(years.substring(2, 4))
 
 }
 day()
