@@ -44,5 +44,7 @@ let day = (year, month, date) => {
         default:
             monthNumber = "invalid Month"
     }
+    let MM = monthNumber
+
 }
 day()
