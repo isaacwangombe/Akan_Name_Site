@@ -1,8 +1,16 @@
-/* .container {
-    background-color: brown;
-    color: black;
-} */
+body {
+    align-self: center;
+    background-image: url(/static/images/mandala.jpg);
+    background-size: 100%;
+    background-color: rgb(16, 16, 20);
+    background-repeat: no-repeat;
+}
+
+.landing_page {}
 
 .landing_page {
-    padding: 10em 0em;
+    margin: 10em 0em;
+    padding: 2em;
+    border-radius: 7%;
+    background-color: rgb(245, 185, 96);
 }
