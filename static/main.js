@@ -1,7 +1,24 @@
-let day = (year, month, date) => {
+let form = document.getElementById("myForm")
+form.addEventListener("submit", function(event) {
+    event.preventDefault()
 
 
-    DD = parseInt(date);
+})
+
+let day = () => {
+
+    fname = document.getElementById("FirstName")
+    year = document.getElementById("birthYear")
+    month = document.getElementById("birthMonth")
+    date = parseInt(document.getElementById("birthDate"))
+
+
+
+    years = toString(year)
+
+    DD = parseFloat(date);
+
+
 
     switch (month) {
         case "January":
@@ -43,24 +60,34 @@ let day = (year, month, date) => {
         default:
             monthNumber = "invalid Month"
     }
-    MM = monthNumber;
+    MM = parseFloat(monthNumber);
 
 
-    CC = parseInt(year.substring(0, 2))
-    YY = parseInt(year.substring(2, 4))
+    CC = parseFloat(years.substring(0, 2))
+    YY = parseFloat(years.substring(2, 4))
 
-    D = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7
-    year = document.getElementById("bDate")[0].value;
+    let D = Math.floor((((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7)
+    console.log(parseInt(D))
+
+    console.log(typeof CC)
+    console.log(typeof YY)
+    console.log(typeof MM)
+    console.log(typeof DD)
+    console.log(typeof D)
+
+    console.log(isNaN(parseFloat(CC)))
+
 }
 
-day(year, "October", 5)
+day();
 
-let gender = (maleFemale) => {
+/* let gender = (maleFemale) => {
+    var ismale = document.getElementById("maleCheck").checked;
+    var isfemale = document.getElementById("femaleCheck").checked;
 
-    var isMale = document.getElementById("maleCheck").ariaChecked;
-    var isFemale = document.getElementById("femaleCheck")
+    if (ismale == )
 
-    let maleName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+        let maleName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     let femaleName = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
     if (maleFemale == "male") {
@@ -79,4 +106,4 @@ let akanName = (akanName) => {
     sliceDown = D - 1
     console.log(akanGender.slice(sliceDown, sliceUp))
 }
-akanName()
+akanName() */
