@@ -9,3 +9,7 @@ body {
     border-radius: 7%;
     background-color: rgb(245, 185, 96);
 }
+
+.radio {
+    margin: 1em 0em;
+}
