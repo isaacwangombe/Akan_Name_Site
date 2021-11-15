@@ -5,83 +5,83 @@ form.addEventListener("submit", function(event) {
 
 })
 
-let day = () => {
 
-    fname = document.getElementById("FirstName")
-    year = document.getElementById("birthYear")
-    month = document.getElementById("birthMonth")
-    date = parseInt(document.getElementById("birthDate"))
+fname = ("FirstName").innerHTML;
+year = document.getElementById("birthYear").innerHTML;
+month = document.getElementById("birthMonth").innerHTML;
+date = parseInt(document.getElementById("birthDate").innerHTML);
 
+console.log(fname)
 
+years = toString(year)
 
-    years = toString(year)
-
-    DD = parseFloat(date);
-
+DD = parseFloat(date);
 
 
-    switch (month) {
-        case "January":
-            monthNumber = 1;
-            break;
-        case "February":
-            monthNumber = 2;
-            break;
-        case "March":
-            monthNumber = 3;
-            break;
-        case "April":
-            monthNumber = 4;
-            break;
-        case "May":
-            monthNumber = 5;
-            break;
-        case "June":
-            monthNumber = 6;
-            break;
-        case "July":
-            monthNumber = 7;
-            break;
-        case "August":
-            monthNumber = 8;
-            break;
-        case "September":
-            monthNumber = 9;
-            break;
-        case "October":
-            monthNumber = 10;
-            break;
-        case "November":
-            monthNumber = 11;
-            break;
-        case "December":
-            monthNumber = 12;
-            break;
-        default:
-            monthNumber = "invalid Month"
-    }
-    MM = parseFloat(monthNumber);
 
-
-    CC = parseFloat(years.substring(0, 2))
-    YY = parseFloat(years.substring(2, 4))
-
-    let D = Math.floor((((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7)
-    console.log(parseInt(D))
-
-    console.log(typeof CC)
-    console.log(typeof YY)
-    console.log(typeof MM)
-    console.log(typeof DD)
-    console.log(typeof D)
-
-    console.log(isNaN(parseFloat(CC)))
-
+switch (month) {
+    case "January":
+        monthNumber = 1;
+        break;
+    case "February":
+        monthNumber = 2;
+        break;
+    case "March":
+        monthNumber = 3;
+        break;
+    case "April":
+        monthNumber = 4;
+        break;
+    case "May":
+        monthNumber = 5;
+        break;
+    case "June":
+        monthNumber = 6;
+        break;
+    case "July":
+        monthNumber = 7;
+        break;
+    case "August":
+        monthNumber = 8;
+        break;
+    case "September":
+        monthNumber = 9;
+        break;
+    case "October":
+        monthNumber = 10;
+        break;
+    case "November":
+        monthNumber = 11;
+        break;
+    case "December":
+        monthNumber = 12;
+        break;
+    default:
+        monthNumber = "invalid Month"
 }
+MM = parseFloat(monthNumber);
+
+
+CC = parseFloat(years.substring(0, 2))
+YY = parseFloat(years.substring(2, 4))
+
+let D = Math.floor((((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7)
+console.log(parseInt(D))
+
+console.log(typeof CC)
+console.log(typeof YY)
+console.log(typeof MM)
+console.log(typeof DD)
+console.log(typeof D)
+
+console.log(isNaN(parseFloat(MM)))
+console.log(month)
+
 
 day();
 
-/* let gender = (maleFemale) => {
+
+let gender = (maleFemale) => {
     var ismale = document.getElementById("maleCheck").checked;
     var isfemale = document.getElementById("femaleCheck").checked;
 
@@ -106,4 +106,10 @@ let akanName = (akanName) => {
     sliceDown = D - 1
     console.log(akanGender.slice(sliceDown, sliceUp))
 }
-akanName() */
+akanName()
+
+let year;
+
+$('#submit').on('click', () => {
+    year =
+})
