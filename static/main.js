@@ -6,7 +6,7 @@ form.addEventListener("submit", function(event) {
 })
 
 
-fname = ("FirstName").innerHTML;
+fname = getElementById("FirstName").innerHTML;
 year = document.getElementById("birthYear").innerHTML;
 month = document.getElementById("birthMonth").innerHTML;
 date = parseInt(document.getElementById("birthDate").innerHTML);
