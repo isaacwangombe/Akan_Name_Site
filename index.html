@@ -19,7 +19,7 @@
             <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.</p>
             <p>input your Birth Year, Birth Month, and Birth date and we will tell you your Akan name</p>
 
-            <form id="myForm">
+            <div id="myForm">
                 <div class="form-group">
                     <label for="firstName"><strong>First Name</strong></label>
                     <input type="text" class="form-control" id="firstName" aria-describedby="" placeholder="First Name">
@@ -30,28 +30,20 @@
                 </div>
                 <div class="form-group">
                     <label for="birthMonth"><strong>Birth Month</strong></label>
-                    <input type="text" class="form-control" id="birthMonth" placeholder="Birth Year e.g. May">
+                    <input type="t" class="form-control" id="birthMonth" placeholder="Birth Year e.g. May">
                 </div>
                 <div class="form-group">
                     <label for="birthDate"><strong>Birth Date</strong></label>
                     <input type="number" class="form-control" id="birthDate" placeholder="Birth Date e.g. 6">
                 </div>
-                <div class="radio">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="maleCheck">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                      Male
-                    </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="femaleCheck" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                      Female
-                    </label>
-                    </div>
-                </div>
+
+                <SELECT id="gender">
+                    <OPTION Value="male">Male</OPTION>
+                    <OPTION Value="female">Female</OPTION>
+                </SELECT>
+
                 <button id="submit" type="submit" class="btn btn-primary ">Submit</button>
-            </form>
+            </div>
         </div>
     </div>
 
