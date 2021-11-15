@@ -7,7 +7,7 @@
 None
 
 ## Live link
-* Follow the link https://isaacmariga.github.io/Akan_Name/
+* Follow the link https://isaacmariga.github.io/Akan_Name_Site/
 
 ## Known Bugs
 {main.js is not linked to index.html }
