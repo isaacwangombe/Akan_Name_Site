@@ -29,7 +29,7 @@ Here is a run through of how to set up the application:
 - Step 3 : Open the directory created with your favorite IDE. if VSCode type **`code .`** . This will launch the editor with the project setup,
 - Now feel free to hack around the project.
 ## Live link
-* Follow the link https://isaacmariga.github.io/Akan_Name_Site/
+* Follow the link https://isaacwangombe.github.io/Akan_Name_Site/
 
 ## Known Bugs
 none
